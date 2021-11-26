@@ -1,5 +1,11 @@
 *{
     font-family: 'EB Garamond', sans-serif;
+
+}
+
+html{
+    height:100%;
+    width:100%;
 }
 
 body{
@@ -10,7 +16,7 @@ body{
 }
 
 /* nav bar css*/
-#gridContainerNavbar{
+.gridContainerNavbar{
     display: grid;
     grid-template-columns: 100%;
     width:100%;
@@ -34,7 +40,7 @@ body{
     background-color:gold;
 }
 
-#navContainer{
+.navContainer{
     margin: 0;
     display: flex;
     justify-content: space-between;
@@ -42,25 +48,25 @@ body{
     
 }
 
-#navContainer ul{
+.navContainer ul{
     display: flex;
     width: 50%;
     justify-content: space-around;
     
 }
 
-#navContainer h1{
+.navContainer h1{
   margin: 0;
   margin-left: 1%;
 }
 
-#navContainer h1 a{
+.navContainer h1 a{
     font-family: 'Lobster', cursive;
     color: rgb(247, 56, 9);
     text-shadow: gold 1px 0 1px;
   }
 
-#navContainer li a{
+.navContainer li a{
     color:gold;
     font-weight: bold;
     text-shadow: black 1px 0 1px;
@@ -77,7 +83,7 @@ a{
 
 @media all and (max-width:911px){
 
-    #navContainer{
+    .navContainer{
         margin: 0;
       
         justify-content: space-between;
@@ -86,13 +92,13 @@ a{
     }
     
 
-    #navContainer ul{
+    .navContainer ul{
         display: none;
         width: 50%;
         
     }
 
-    #navContainer h1{
+    .navContainer h1{
         margin: 0;
         margin-left: 0;
         width: 90%;
@@ -116,6 +122,18 @@ a{
     .hamburger:checked + #navContainer +#navContainer ul{
         display: flex;
 
+    }
+
+    .containerMainApp{
+        display: grid;
+        /* grid-template-columns: 100%; */
+        /* grid-template-rows: 50% 50%; */
+    }
+
+    .bannerApp {
+        grid-column-start: 1;
+        grid-row-end: 1;
+        background-image: url("./../img/banner.jpeg");
     }
 
 }
