@@ -14,7 +14,7 @@
     <meta property="og:type" content="">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
-    <link type="text/plain" rel="author" href="./humans.txt" />
+
     <link rel="manifest" href="site.webmanifest">
     <link rel="icon" href="./red-beard.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
@@ -41,13 +41,13 @@
                     <a href="./services.html" class="nav-link">SERVICES</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./shop.html" class="nav-link">SHOP</a>
+                    <a href="#" class="nav-link">SHOP</a>
                 </li>
                 <li class="nav-item">
                     <a href="./gallery.html" class="nav-link">GALLERY</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">BLOG</a>
+                    <a href="./shop.html" class="nav-link">BLOG</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">RESERVATION</a>
@@ -60,30 +60,46 @@
     </header>
     <!-- main -->
     <main class="containerMainApp">
-        <!-- banner -->
+
         <section class="bannerApp">
-            <div class="containerImagesBanner">
-                <img src="./img/barbe.jpg" alt="barber">
-                <img src="./img/moustache.jpg" alt="moustache">
-                <img src="./img/barbe.jpg" alt="barber">
+
+        </section>
+        <section>
+            <h1 class="imgTitle"> </h1>
+            <h1 class="imgTitle"> </h1>
+            <h1 class="imgTitle"> </h1>
+            <div class="space"></div>
+            <div class="contact-container">
+
+                <div class="left-col">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325493.28473813133!2d3.086370968297694!3d50.40539769937091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2ede86db1d083%3A0xd882e263385ff1cc!2sGRETA%20Grand%20Hainaut%20Site%20de%20Valenciennes!5e0!3m2!1sfr!2sfr!4v1637938039696!5m2!1sfr!2sfr"
+                        width="600" height="600" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="right-col">
+
+                    <h2>Contact us</h2>
+                    <form id="contact-form" method="post">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                        <label for="message">Message</label>
+                        <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+                        <!--<a href="javascript:void(0)">--><button type="submit" id="submit"
+                            name="submit">Send</button>
+                        <!--</a>-->
+
+                    </form>
+                    <div id="error"></div>
+                    <div id="success-msg"></div>
+                </div>
             </div>
         </section>
-        <!-- article -->
-        <article>
-            <h1 class="titleArticle"><a href="">Cut by Luis</a></h1>
-            <h1 class="titleStory">About Us:</h1>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatibus modi quidem dolore
-                in. <br>
-                Numquam repudiandae itaque qui repellendus fugit officiis accusamus dolorem commodi soluta mollitia
-                consequatur, <br>
-                eum expedita distinctio.
-            </p>
-        </article>
     </main>
 
 
-    
     <footer>
 
         <div class="containerfooter">
@@ -115,8 +131,7 @@
 
             </div>
         </div>
-    </footer>  
-
+    </footer>
 </body>
 
 </html>
