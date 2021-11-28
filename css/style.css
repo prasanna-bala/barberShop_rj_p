@@ -356,23 +356,88 @@ a{
     text-align: center;
     font-size: 1.5vw;
 }
+/* contact css */
+.sectionContactContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#contact-form input{
+    border: none;
+    border-bottom: 2px solid rgb(88, 32, 15);
+    margin: 2em 0px;
+    outline: none;
+    font-size: 0.7em;
+}
+
+#contact-form textarea{
+    margin-top: 1em;
+    border: none;
+    border-bottom: 2px solid rgb(88, 32, 15);
+    outline: none;
+    font-size: 0.7em;
+}
+
+#contact-form button{
+    background-color: rgb(88, 32, 15); 
+    border: none;
+    color: white;
+    padding: 0.5em;
+    margin-top: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+    cursor: pointer;
+    box-shadow: rgb(88, 32, 15)2px 3px 2px;
+}
+
+.contact-container{
+    margin-bottom: 4rem;
+}
+
+.iframContact{
+    box-shadow: rgb(88, 32, 15)2px 3px 2px;
+}
+
+/* blog css */
+.containerBlog{
+    text-align: center;
+    font-size: 1.5vw;
+    margin-bottom: 5em;
+}
+
+.containerBlog img{
+    width: 20vw;
+    box-shadow: rgb(88, 32, 15)2px 3px 2px;
+}
 
 
-@media all and (max-width:1564px) {
-    .sectionInfos{
-        font-size: 1.6em;
-    }
-    .reservationContainer{
+
+@media all and (max-width:800px){
+
+    /* footer css */
+    .containerfooter{
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
-    .sectionTable{
-        margin-top: 3rem;
-        width: 100%;
+
+    /* contact css */
+    #contact-form button{
+       
+        padding: 0.5em;
+        margin-top: 1.5em;
+       font-size: 2em;
     }
-}
-@media all and (max-width:800px){
+
+    /* reservation css */
     .sectionTable{
         margin-top: 3rem;
         width: 30%;
@@ -419,9 +484,33 @@ a{
         width: 100%;
         height: auto;
     }
+
+  
+}
+
+@media all and (max-width:1159px) {
+    .sectionContactContainer{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    #contact-form{
+        margin-bottom: 3rem;
+        width: 60%;
+    }
+
+    /* blog css */
+
+    .containerBlog{
+       
+        font-size: 2.7vw;
+       
+    }
 }
 
 @media all and (max-width:1503px){
+
     .sectionTable{
         margin-top: 3rem;
         width: 70%;
@@ -528,71 +617,38 @@ a{
         height: auto;
     }
 
+    /* blog css */
+    .containerBlog img{
+        width: 25vw;
+        box-shadow: rgb(88, 32, 15)2px 3px 2px;
+    }
 
-.tablecenter {
-  margin-left: auto;
-  margin-right: auto;
-}
-/*service*/
-
-.wrap {
-  width:800px;
-  margin:0 auto;
-  text-align:left;
-  color:#989A8F;
-}
-
-.tableservice {
-  background-color:#ffffff; 
-  height:100%;
-  width:100%;
-  margin-top:50px;  
+    .containerBlog{
+       
+        font-size: 3vw;
+       
+    }
 }
 
-ul li {
-  float:left;
-  width:500PX;
-  text-align:center;
-  color: rgb(70, 70, 22);
-  border-left:1px solid #DDDCD8;
-}
+@media all and (max-width:1564px) {
+    .sectionInfos{
+        font-size: 1.6em;
+    }
+    .reservationContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionTable{
+        margin-top: 3rem;
+        width: 100%;
+    }
 
-.top {
-  background-color:#EAE9E4;
-  height:75px;
-  width:100%;
+    /* blog css */
+    .containerBlog{
+       
+        font-size: 3vw;
+       
+    }
 }
  
-.bottom {
-margin-top:50px;
-width:100%;
-}
-/*service*/
- 
-
- 
-/*reservation*/
-.divleft {
-  
-height: 480px;
-width: 10px;
-float: left;
-} 
-
-.divright {
-  background-color: rgb(0, 255, 13);
-  height: 480px;
-  width: 10px;
-  float: right;
-
-}
-.divmiddle {
-  background-color: rgb(255, 0, 0);
-  height: 480px;
-  width: auto;
-  
-  margin-left: 10px;
-  margin-bottom: -400px;
-  margin-top: 20px;
-}
-
