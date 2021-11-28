@@ -356,23 +356,73 @@ a{
     text-align: center;
     font-size: 1.5vw;
 }
+/* contact css */
+.sectionContactContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#contact-form input{
+    border: none;
+    border-bottom: 2px solid rgb(88, 32, 15);
+    margin: 2em 0px;
+    outline: none;
+}
+
+#contact-form textarea{
+    margin-top: 1em;
+    border: none;
+    border-bottom: 2px solid rgb(88, 32, 15);
+    outline: none;
+}
+
+#contact-form button{
+    background-color: rgb(88, 32, 15); 
+    border: none;
+    color: white;
+    padding: 0.5em;
+    margin-top: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+    cursor: pointer;
+    box-shadow: rgb(88, 32, 15)2px 3px 2px;
+}
+
+.contact-container{
+    margin-bottom: 4rem;
+}
+
+.iframContact{
+    box-shadow: rgb(88, 32, 15)2px 3px 2px;
+}
 
 
-@media all and (max-width:1564px) {
-    .sectionInfos{
-        font-size: 1.6em;
-    }
-    .reservationContainer{
+@media all and (max-width:800px){
+
+    /* footer css */
+    .containerfooter{
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
-    .sectionTable{
-        margin-top: 3rem;
-        width: 100%;
+
+    /* contact css */
+    #contact-form button{
+       
+        padding: 0.5em;
+        margin-top: 1.5em;
+       font-size: 2em;
     }
-}
-@media all and (max-width:800px){
+
+    /* reservation css */
     .sectionTable{
         margin-top: 3rem;
         width: 30%;
@@ -418,6 +468,21 @@ a{
        
         width: 100%;
         height: auto;
+    }
+
+  
+}
+
+@media all and (max-width:1159px) {
+    .sectionContactContainer{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    #contact-form{
+        margin-bottom: 3rem;
+        width: 60%;
     }
 }
 
@@ -529,4 +594,19 @@ a{
     }
 
 
+}
+
+@media all and (max-width:1564px) {
+    .sectionInfos{
+        font-size: 1.6em;
+    }
+    .reservationContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionTable{
+        margin-top: 3rem;
+        width: 100%;
+    }
 }
