@@ -645,6 +645,7 @@ a{
     }
 
     /* blog css */
+
     .containerBlog{
        
         font-size: 3vw;
@@ -652,3 +653,25 @@ a{
     }
 }
  
+
+@media all and (max-width:1564px) {
+    .sectionInfos{
+        font-size: 1.6em;
+    }
+    .reservationContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionTable{
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    /* blog css */
+    .containerBlog{
+       
+        font-size: 3vw;
+       
+    }
+}
