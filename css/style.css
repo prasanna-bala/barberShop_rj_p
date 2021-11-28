@@ -374,6 +374,7 @@ a{
     border-bottom: 2px solid rgb(88, 32, 15);
     margin: 2em 0px;
     outline: none;
+    font-size: 0.7em;
 }
 
 #contact-form textarea{
@@ -381,6 +382,7 @@ a{
     border: none;
     border-bottom: 2px solid rgb(88, 32, 15);
     outline: none;
+    font-size: 0.7em;
 }
 
 #contact-form button{
@@ -404,6 +406,19 @@ a{
 .iframContact{
     box-shadow: rgb(88, 32, 15)2px 3px 2px;
 }
+
+/* blog css */
+.containerBlog{
+    text-align: center;
+    font-size: 1.5vw;
+    margin-bottom: 5em;
+}
+
+.containerBlog img{
+    width: 20vw;
+    box-shadow: rgb(88, 32, 15)2px 3px 2px;
+}
+
 
 
 @media all and (max-width:800px){
@@ -484,9 +499,18 @@ a{
         margin-bottom: 3rem;
         width: 60%;
     }
+
+    /* blog css */
+
+    .containerBlog{
+       
+        font-size: 2.7vw;
+       
+    }
 }
 
 @media all and (max-width:1503px){
+
     .sectionTable{
         margin-top: 3rem;
         width: 70%;
@@ -593,7 +617,17 @@ a{
         height: auto;
     }
 
+    /* blog css */
+    .containerBlog img{
+        width: 25vw;
+        box-shadow: rgb(88, 32, 15)2px 3px 2px;
+    }
 
+    .containerBlog{
+       
+        font-size: 3vw;
+       
+    }
 }
 
 @media all and (max-width:1564px) {
@@ -608,5 +642,12 @@ a{
     .sectionTable{
         margin-top: 3rem;
         width: 100%;
+    }
+
+    /* blog css */
+    .containerBlog{
+       
+        font-size: 3vw;
+       
     }
 }
