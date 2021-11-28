@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <meta name="theme-color" content="#fafafa">
     <title>Cut by Luis</title>
+
 </head>
 
 <body>
@@ -36,25 +37,25 @@
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="./index.html" class="nav-link">HOME</a>
-                </li>
+
                 <li class="nav-item">
                     <a href="./services.html" class="nav-link">SERVICES</a>
-                </li>
+
                 <li class="nav-item">
                     <a href="./shop.html" class="nav-link">SHOP</a>
-                </li>
+
                 <li class="nav-item">
                     <a href="./gallery.html" class="nav-link">GALLERY</a>
-                </li>
+
                 <li class="nav-item">
-                    <a href="#" class="nav-link">BLOG</a>
-                </li>
+                    <a href="./blog.html" class="nav-link">BLOG</a>
+
                 <li class="nav-item">
                     <a href="./reservation.html" class="nav-link">RESERVATION</a>
-                </li>
+
                 <li class="nav-item">
                     <a href="./contact.html" class="nav-link">CONTACT</a>
-                </li>
+
             </ul>
         </nav>
     </header>
@@ -68,22 +69,38 @@
                 <img src="./img/barbe.jpg" alt="barber">
             </div>
         </section>
-        <!-- article -->
-        <article>
-            <h1 class="titleArticle"><a href="">Cut by Luis</a></h1>
-            <h1 class="titleStory">About Us:</h1>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatibus modi quidem dolore
-                in. <br>
-                Numquam repudiandae itaque qui repellendus fugit officiis accusamus dolorem commodi soluta mollitia
-                consequatur, <br>
-                eum expedita distinctio.
-            </p>
-        </article>
+     
+        <div class="right-col">
+
+        <h2>Reservation</h2>
+        <form id="contact-form" method="post">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            <label for="message">service</label>
+            <select name="service" id="service">
+                <option value="service1">Gommage barbe + soin vapeur en supplément</option>
+                <option value="service2">Masque soin barbe naturel + soin vapeur en supplément</option>
+                <option value="service3">Coupe et barbe</option>
+                <option value="service4">Taille de barbe</option>
+                <option value="service5">Rasage crane lame traditionnel savonnage au blaireau</option>
+                <option value="service6">Taille de barbe tondeuse</option>
+                <option value="service7">Coupe couronne</option>
+                <option value="service8"> Coupe stylisée</option>
+                <option value="service9">Coupe homme</option>
+                <option value="service10">Coloration barbe</option>
+                <option value="service11">Coloration temporaire homme</option>
+            </select></br></br></br>
+            <button type="submit" id="submit" name="submit">Reserve</button>
+        </form>
+
+        </div>
+ 
     </main>
 
 
-    
+
     <footer>
 
         <div class="containerfooter">
@@ -95,10 +112,10 @@
                 <p class="footerp">
                     <a style="margin-right: 15px;" href="https://www.facebook.com/salonhair.valenc/" target="_blank"
                         rel="noopener noreferrer">
-                        <img src="./img/facebook20x20.png"/>
+                        <img src="./img/facebook20x20.png" />
                     </a>
                     <a href="https://www.instagram.com/salon_/" target="_blank" rel="noopener noreferrer">
-                        <img  src="./img/instagram20x20.png" />
+                        <img src="./img/instagram20x20.png" />
                     </a>
                 </p>
             </div>
@@ -115,7 +132,7 @@
 
             </div>
         </div>
-    </footer>  
+    </footer>
 
 </body>
 

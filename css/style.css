@@ -842,5 +842,27 @@ width:100%;
  
 
  
+/*reservation*/
+.divleft {
+  
+height: 480px;
+width: 10px;
+float: left;
+} 
 
- 
+.divright {
+  background-color: rgb(0, 255, 13);
+  height: 480px;
+  width: 10px;
+  float: right;
+
+}
+.divmiddle {
+  background-color: rgb(255, 0, 0);
+  height: 480px;
+  width: auto;
+  
+  margin-left: 10px;
+  margin-bottom: -400px;
+  margin-top: 20px;
+}
